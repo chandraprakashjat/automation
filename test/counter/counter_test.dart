@@ -21,6 +21,13 @@ void main() {
       expect(counter.count, -1);
     });
 
+    test('middle test', () {
+      var counter = Counter();
+      counter.decrement();
+      counter.decrement();
+      expect(counter.count, 0);
+    });
+
     test('Skip Counter Operation', () {
       var counter = Counter();
       counter.decrement();
